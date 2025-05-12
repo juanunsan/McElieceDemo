@@ -1,0 +1,9 @@
+# entornos virtuales
+venv/
+# liboqs compilada localmente
+_oqs/
+# ficheros de VSCode / Streamlit
+.vscode/
+.streamlit/
+__pycache__/
+
