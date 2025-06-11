@@ -43,7 +43,9 @@ venv\Scripts\activate               # Linux/macOS: source venv/bin/activate
 # 4. Instala dependencias **compilando liboqs** (tarda unos minutos)
 ```bash
 python -m pip install -U pip wheel cmake
-python -m pip install --no-binary :all: -r requirements.txt
+python -m pip install --no-binary :all: ^
+       "liboqs-python @ git+https://github.com/open-quantum-safe/liboqs-python@0.10.0"
+python -m pip install streamlit==1.45.0 pycryptodome==3.20.0
 ```
 # 5. (solo Windows) añade las DLL de liboqs a la sesión
 ```bash
