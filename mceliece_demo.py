@@ -49,7 +49,7 @@ def main() -> None:
     parser.add_argument(
         "-p",
         "--params",
-        default="Classic_McEliece_348864",
+        default="Classic-McEliece-348864",
         help="Nombre exacto del esquema (consulte oqs.get_enabled_KEM_mechanisms())",
     )
     args = parser.parse_args()
